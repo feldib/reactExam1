@@ -2,7 +2,7 @@
 
 this is the updated plan: 1.
 skeleton in app.js (with navbar)
-import moviem and tv show genres from api if not already saved in localStorage
+import moviem and tv show langauges from api if not already saved in localStorage
 import and implement router
 write home page
 
