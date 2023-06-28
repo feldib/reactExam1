@@ -18,7 +18,6 @@ function App() {
                 .then(response =>{
                     localStorage.setItem("languages", JSON.stringify(response))
                     setLanguages(localStorage.getItem("languages"))
-                    alert(languages)
                 })
                 .catch(err => console.error(err));
             }
