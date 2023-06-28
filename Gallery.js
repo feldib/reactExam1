@@ -416,8 +416,8 @@ function Gallery() {
     function movieCard(movieData){
         return (
         <div 
-            className='col card my-2 mx-1 p-1 text-center'
-            style={{width: "12rem"}}
+            className='card my-2 mx-1 p-1 text-center'
+            style={{width: "10rem"}}
         >
             <img className='card-img-top' src={`https://www.themoviedb.org/t/p/w440_and_h660_face/${movieData.poster_path}`}/>
             <h5>{movieData.title}</h5>
@@ -425,8 +425,8 @@ function Gallery() {
         </div>)
     }
     return (
-        <div className='row'>
-            {movies.slice(0, 6).map((m)=>{
+        <div className='d-flex flex-wrap'>
+            {movies.map((m)=>{
                 return movieCard(m)
             })}
         </div>
