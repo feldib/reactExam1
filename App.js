@@ -47,7 +47,7 @@ function App() {
                         </Route>
 
                         <Route path="Movies" element={
-                            <TVShowsOrMovies moviesOrShows="movies" />
+                            <TVShowsOrMovies moviesOrShows="movie" />
                         }>
                             <Route path="Search" element={<Search />}></Route>
                             <Route path="Browse" element={<Browse languages={languages} />}></Route>

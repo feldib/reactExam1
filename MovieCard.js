@@ -15,8 +15,8 @@ export default function MovieCard(movieData){
             style={{width: "10rem"}}
         >
             <img className='card-img-top' src={`https://www.themoviedb.org/t/p/w440_and_h660_face/${movieData.poster_path}`}/>
-            <h5>{movieData.title}</h5>
-            <p>{movieData.release_date}</p>
+            <h5>{movieData.name}</h5>
+            <p>{movieData.first_air_date}</p>
         </div>
       </Link>
     )
