@@ -1,4 +1,5 @@
 import React from 'react'
+import MovieCard from './MovieCard'
 
 const movies = {
     "page": 1,
@@ -413,21 +414,10 @@ const movies = {
       // thumnail URL: https://www.themoviedb.org/t/p/w440_and_h660_face/${individualMovie.backdrop_path}
     //https://www.themoviedb.org/t/p/w440_and_h660_face/ccTPLqp5HStI5YLcM8XRY0Ck8Nw.jpg
 function Gallery() {
-    function movieCard(movieData){
-        return (
-        <div 
-            className='card my-2 mx-1 p-1 text-center'
-            style={{width: "10rem"}}
-        >
-            <img className='card-img-top' src={`https://www.themoviedb.org/t/p/w440_and_h660_face/${movieData.poster_path}`}/>
-            <h5>{movieData.title}</h5>
-            <p>{movieData.release_date}</p>
-        </div>)
-    }
     return (
         <div className='d-flex flex-wrap'>
             {movies.map((m)=>{
-                return movieCard(m)
+                return MovieCard(m)
             })}
         </div>
     )
